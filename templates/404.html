@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Uh-oh! Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            background-color: #ffe4b5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 120px;
+            margin: 0;
+            color: #ff6347;
+            transform: rotate(-10deg);
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        .home-button {
+            margin-top: 30px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #ff4500;
+            transform: scale(1.1);
+        }
+
+        .gif {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>404</h1>
+    <h2>Oops! You found a broken link!</h2>
+    <p>Looks like this page took a wrong turn and got lost. But hey, at least it's in good company!</p>
+    <div>
+        <img src="https://i.giphy.com/VbnUQpnihPSIgIXuZv.webp" alt="Funny gif" class="gif">
+    </div>
+</div>
+</body>
+</html>
